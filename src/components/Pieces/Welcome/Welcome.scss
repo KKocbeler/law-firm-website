@@ -37,4 +37,17 @@
             transition: all 1s;
         }
     }
+
+    @media (max-width: 768px) {
+        .welcome-content {
+            img {
+                width: 10rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+                transform: translateY(-1rem);
+            }
+        }
+    }
 }
