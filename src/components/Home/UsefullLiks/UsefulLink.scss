@@ -1,0 +1,62 @@
+.useful-links {
+    margin: 5rem auto;
+    > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        li {
+            a {
+                img {
+                    height: 6rem; width: auto;
+                    object-fit: cover;
+                    filter: drop-shadow(0 16px 6px rgba(0, 0, 0, 0.6));
+                    transition: all .4s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin: 3rem 1.5rem;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+
+
+        /* Scrollbar genişliği */
+        -webkit-scrollbar {
+        width: 20px;
+        }
+
+        /* Scrollbar kanalı (arkaplanı) */
+        -webkit-scrollbar-track {
+        background: #b81717;
+        border-radius: 10px;
+        }
+
+        /* Scrollbar kaydırma çubuğu */
+        -webkit-scrollbar-thumb {
+        background: #750b0b;
+        border-radius: 10px;
+        }
+
+        /* Hover efekti */
+        -webkit-scrollbar-thumb:hover {
+        background: #a80101;
+        }
+        > ul {
+            li {
+                a {
+                    img {
+                        height: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

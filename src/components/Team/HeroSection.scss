@@ -1,0 +1,43 @@
+.members__hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    background-color: var(--color-blue);
+    background-image: url("../../../public/images/our-team/our-team-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+    isolation: isolate;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: var(--color-blue);
+        z-index: -1;
+        opacity: .8;
+    }
+
+    .members__hero-content {
+        h1 {
+            color: var(--color-white);
+            margin-bottom: 6rem;
+            font-size: 2.4rem;
+            letter-spacing: .2rem;
+        }
+    }
+
+        @media (max-width: 768px) {
+        height: 25vh;
+
+        .members__hero-content {
+            h1 {
+                margin-bottom: 2.5rem;
+                font-size: 2rem;
+            }   
+        }
+    }
+
+}

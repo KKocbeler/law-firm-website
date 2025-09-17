@@ -1,0 +1,16 @@
+.about-us {
+    margin: 5rem auto;
+    min-height: 40vh;
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    p {
+        text-align: center;
+        line-height: 1.7rem
+    }
+
+    @media (max-width: 768px) {
+        margin: 3rem 1.5rem;
+    }
+}

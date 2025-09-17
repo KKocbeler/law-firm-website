@@ -1,0 +1,40 @@
+.mobile-nav-menu {
+    display: none;
+    padding: 0 1rem;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--color-blue);
+        img {
+            width: 4rem;
+        }
+
+        button {
+            svg {
+                width: 2rem; height: 2rem;
+            }
+        }
+    }
+    .nav-menu__list {
+        .nav-menu__item {
+            color: var(--color-blue);
+            padding: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background-color: var(--color-white);
+        transition: all .3s;
+        visibility: hidden;
+        opacity: 0;
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

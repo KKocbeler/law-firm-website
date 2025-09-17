@@ -1,0 +1,22 @@
+
+:root {
+    // Colors
+    --color-white: rgb(255, 255, 255);
+    --color-beige: rgb(197, 168, 128);
+    --color-brown: rgb(83, 46, 28);
+    --color-black: #111111;
+    --color-blue: #0B2537;
+    --color-yellow: #CBB592;
+    --color-gray: #8d8d8d;
+
+    // Box-shadow
+    --shadow-0:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --shadow-1:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --shadow-2:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    // Font
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    --accent: "Poppins", sans-serif;
+}

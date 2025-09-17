@@ -1,0 +1,29 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.scss';
+// Layouts
+import MainLayout from './layouts/MainLayout';
+
+// Pages
+import Home from './pages/Home';
+import OurTeam from './pages/OurTeam';
+import About from './pages/About';
+import TermsPrivacy from './pages/TermsPrivacy';
+
+
+
+function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<MainLayout />}>
+                    <Route path="/" element={<Home />} /> 
+                    <Route path="/our-team" element={<OurTeam />} />
+                    <Route path='/about-us' element={<About />} />
+                    <Route path="/terms-and-privacy" element={<TermsPrivacy /> } />
+                </Route>
+            </Routes>
+        </Router>
+    )
+}
+
+export default App

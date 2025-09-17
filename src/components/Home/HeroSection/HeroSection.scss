@@ -1,0 +1,55 @@
+.hero {
+    display: flex;
+    align-items: center;
+    background-image: url("/images/home.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; height: 100svh;
+    position: relative;
+    z-index: 0;
+    box-shadow: var(--shadow-1);
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at bottom, var(--color-blue), var(--color-blue));
+        opacity: .7;
+        z-index: -1;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 55rem;
+
+        img {
+            filter: brightness(0) invert(1);
+            width: 18rem; height: auto;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.7rem;
+            font-weight: bold;
+            color: var(--color-white);
+            text-align: center;
+            transform: translateY(-2rem);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-content {
+            img {
+                width: 10rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+                transform: translateY(-1rem);
+            }
+        }
+    }
+}

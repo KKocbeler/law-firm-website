@@ -1,0 +1,143 @@
+footer {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    padding: .5rem 0;
+    margin-top: auto;
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .f-left {
+            .brand-logo {
+                img {
+                    width: 6rem; height: auto;
+                    object-fit: cover;
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+            p {
+                margin-bottom: .3rem;
+            }
+            .footer-media {
+                margin-top: 1.5rem;
+                .footer-media__list {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    svg {
+                        width: 1.5rem; height: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .f-services {
+            margin-top: 1rem;
+            h3 {
+                margin-bottom: .5rem;
+            }
+
+            .services-list {
+                .services-list__item {
+                    margin-bottom: .3rem;
+                    color: var(--color-gray);
+                    font-size: .925rem;
+                }
+            }
+        }
+
+        .f-contacts {
+            margin-top: 1rem;
+            h3 {
+                margin-bottom: .5rem;
+            }
+
+            p {
+                margin-bottom: .5rem;
+                font-size: .925rem;
+                color: var(--color-gray);
+                text-decoration: underline;
+            }
+        }
+
+        .f-ataturk {
+            img {
+                width: 6.4rem; height: auto;
+                object-fit: cover;
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        .f-flags {
+            display: flex;
+            gap: 1rem;
+            position: absolute;
+            bottom: 0; right: 0;
+
+            img {
+                width: 2.5rem; height: auto;
+                border-radius: .1rem;
+                box-shadow: var(--shadow-2);
+                cursor: pointer;
+            }
+        }
+    }
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        color: var(--color-gray);
+        padding-top: 1rem;
+        margin-top: 2rem;
+        border-top: 1px solid var(--color-gray);
+        font-size: .875rem;
+        .privacy-terms {
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-bottom: 1rem;
+
+            .f-left {
+                text-align: center;
+                
+                .brand-logo {
+                    img {
+                        width: 7rem;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .f-ataturk {
+                display: none;
+            }
+
+            .f-flags {
+                position: static;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 2rem;
+            }
+        }
+
+        .f-contacts, .f-services {
+            text-align: center;
+        }
+
+        .footer-bottom {
+            flex-direction: column;
+            gap: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}

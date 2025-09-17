@@ -1,0 +1,40 @@
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    width: 100%; height: 100%;
+    background-color: var(--color-white);
+    z-index: 99999;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease;
+    &.hide {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .welcome-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 55rem;
+
+        img {
+            filter: brightness(0) saturate(100%) invert(10%) sepia(55%) saturate(1150%) hue-rotate(170deg) brightness(89%) contrast(94%);
+            width: 18rem; height: auto;
+            object-fit: cover;
+            transition: all 1s;
+        }
+
+        h1 {
+            font-size: 2.7rem;
+            font-weight: bold;
+            color: var(--color-blue);
+            text-align: center;
+            transform: translateY(-2rem);
+            transition: all 1s;
+        }
+    }
+}

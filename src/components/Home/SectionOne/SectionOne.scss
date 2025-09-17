@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&display=swap');
+.section-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 960px;
+    margin: 5rem auto;
+
+    .image-section {
+        position: relative;
+        img {
+            width: 100%; height: 30rem;
+            border-radius: .3rem;
+        }
+
+        .badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            transform: translateX(-50%);
+            background-color: var(--color-white);
+            box-shadow: var(--shadow-2);
+            padding: 1rem 2rem;
+            border-radius: .75rem;
+            overflow: hidden;
+            color: var(--color-black);
+            > span {
+                text-align: center;
+                font-weight: bold;
+                font-size: 3rem;
+            }
+            > p {
+                text-align: center;
+                font-family: "Kapakana", cursive;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+
+            ::after {
+                content: "";
+                position: absolute;
+                top: 0; left: 0;
+                width: 8rem; height: 8rem;
+                background-color: var(--color-yellow);
+                border-radius: 50%;
+                transform: translate(-30%, -30%);
+                z-index: -1;
+            }
+        }
+    }
+
+    .content-section {
+        > svg {
+            width: 3rem; height: 3rem;
+            color: var(--color-yellow);
+        }
+
+        .title {
+            font-size: 2.4rem;
+            margin: 1rem 0;
+            // line-height: 2rem;
+
+            b {
+                text-decoration: underline;
+            }
+        }
+
+        .features {
+            margin-top: 2rem;
+            .features__list {
+                .features__list-item {
+                    display: flex;
+                    gap: .5rem;
+                    margin-bottom: .5rem;
+                    svg {
+                        width: 1.5rem; height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        margin: 3rem 1.5rem;
+        gap: 2rem;
+        .image-section {
+            img {
+                height: auto;
+            }
+
+            .badge {
+                height: 8rem;
+                top: 100%; left: 0;
+                transform: translate(0, -100%);
+                border-radius: .3rem;
+            }
+        }
+        .content-section {
+            svg {
+                display: none;
+            }
+        }
+    }
+}

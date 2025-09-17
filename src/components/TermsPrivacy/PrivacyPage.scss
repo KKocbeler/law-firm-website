@@ -1,0 +1,23 @@
+.privacy {
+    display: block;
+    margin: 4em auto;
+
+    .privacy-container {
+        h1 {
+            text-align: center;
+        }
+
+        > section {
+            text-align: center;
+            margin: 2rem;
+
+            h2 {
+                margin-bottom: .5rem;
+            }
+
+            p {
+                line-height: 1.6rem;
+            }
+        }
+    }
+}
