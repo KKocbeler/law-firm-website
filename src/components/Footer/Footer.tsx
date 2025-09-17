@@ -1,14 +1,5 @@
 import { Link } from "react-router-dom";
 import "./Footer.scss";
-import { FaInstagram, FaFacebook, FaWhatsapp, FaXTwitter, FaLinkedin } from "react-icons/fa6";
-
-// const socialLinks = [
-//   { label: "Instagram", icon: <FaInstagram />, path: "https://instagram.com" },
-//   { label: "Facebook", icon: <FaFacebook />, path: "https://facebook.com" },
-//   { label: "Whatsapp", icon: <FaWhatsapp />, path: "https://watsapp.com" },
-//   { label: "X", icon: <FaXTwitter />, path: "https://x.com" },
-//   { label: "LinkedIn", icon: <FaLinkedin />, path: "https://linkedin.com" },
-// ];
 
 const flags = [
     {country: "Türkiye", path:"/images/countries/flag_of_turkey.svg.webp"},

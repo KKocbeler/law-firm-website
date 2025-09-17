@@ -1,6 +1,6 @@
 import "./Navbar.scss";
 import "../../styles/_variables.scss";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
