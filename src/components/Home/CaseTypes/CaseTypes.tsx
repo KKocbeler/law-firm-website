@@ -9,7 +9,7 @@ const practiceAreas = [
       "Miras ve vasiyet",
       "Evlat edinme işlemleri"
     ],
-    image: "/images/justice-types/aile-hukuk.jpg"
+    image: "/images/justice-types/aile-hukuk.png"
   },
   {
     title: "Ticaret ve Şirket Hukuku",
@@ -19,7 +19,7 @@ const practiceAreas = [
       "Ticari uyuşmazlıklar",
       "Fesih ve iflas işlemleri"
     ],
-    image: "/images/justice-types/sirket-hukuku.jpeg"
+    image: "/images/justice-types/ticaret-hukuk.png"
   },
   {
     title: "Ceza Hukuku",
@@ -28,7 +28,7 @@ const practiceAreas = [
       "Temyiz ve itiraz süreçleri",
       "Adli soruşturmalar"
     ],
-    image: "/images/justice-types/ceza-hukuk.jpeg"
+    image: "/images/justice-types/ceza-hukuk.png"
   },
   {
     title: "İş ve Sosyal Güvenlik Hukuku",
@@ -37,7 +37,7 @@ const practiceAreas = [
       "Tazminat davaları",
       "İş sözleşmesi ve fesih konuları"
     ],
-    image: "/images/justice-types/is-hukuku.png"
+    image: "/images/justice-types/is-hukuk.png"
   },
   {
     title: "İcra ve İflas Hukuku",
@@ -46,7 +46,7 @@ const practiceAreas = [
       "İcra takibi ve icra iptali",
       "Konkordato ve iflas işlemleri"
     ],
-    image: "/images/justice-types/icra-hukuku.jpg"
+    image: "/images/justice-types/icra-hukuk.png"
   },
   {
     title: "Gayrimenkul ve İnşaat Hukuku",
@@ -55,7 +55,7 @@ const practiceAreas = [
       "Tapu ve mülkiyet davaları",
       "İnşaat ve proje uyuşmazlıkları"
     ],
-    image: "/images/justice-types/gayrimenkul-hukuk.jpg"
+    image: "/images/justice-types/gayrimenkul-hukuk.png"
   },
   {
     title: "Vergi Hukuku",
@@ -63,7 +63,7 @@ const practiceAreas = [
       "Vergi davaları ve itirazlar",
       "Vergi cezaları ve denetimler"
     ],
-    image: "/images/justice-types/vergi-hukuk.jpg"
+    image: "/images/justice-types/vergi-hukuk.png"
   },
   {
     title: "Fikri Mülkiyet Hukuku",
@@ -71,7 +71,7 @@ const practiceAreas = [
       "Marka, patent ve tasarım davaları",
       "Telif hakları ve lisans anlaşmaları"
     ],
-    image: "/images/justice-types/dusunce-hukuku.webp"
+    image: "/images/justice-types/dusunce-hukuk.png"
   },
 ];
 

@@ -10,7 +10,7 @@ const navMenu = [
     {label: "Anasayfa", path: "/"},
     {label: "Ekibimiz", path: "/our-team"},
     {label: "Hakkımızda", path: "/about-us"},
-    {label: "İletişim", path: "/"},
+    {label: "İletişim", path: "/contact"},
 ]
 
 const Navbar = () => {

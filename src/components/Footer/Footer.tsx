@@ -20,6 +20,9 @@ const services = [
   "Sözleşme ve Ticari İşlemler",
   "Aile ve Miras Hukuku",
 ];
+
+const mail = "ayderhukuk@gmail.com";
+const phone = "(0532) 179 71 55";
 const Footer = () => {
   return (
     <footer>
@@ -54,8 +57,25 @@ const Footer = () => {
             </div>
             <div className="f-contacts">
                 <h3>İletişim</h3>
-                <p>example.mail@example.com</p>
-                <p>(505)-555-55-55</p>
+                <p>
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=ayderhukuk@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="E-posta gönder: ayderhukuk@gmail.com"
+                    >
+                        {mail}
+                    </a>
+                </p>
+
+                <p>
+                    <a
+                        href="tel:+905321797155"
+                        aria-label="Ara: 0532 179 71 55"
+                    >
+                        {phone}
+                    </a>
+                </p>
             </div>
             <div className="f-ataturk">
                 <img src="/images/ataturk.png" alt="Atatürk" />

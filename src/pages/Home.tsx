@@ -10,7 +10,6 @@ const Home = () => {
         <SectionOne />
         <CaseTypes />
         <UsefullLink />
-        {/* <Country /> */}
     </>
   )
 }

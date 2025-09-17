@@ -33,8 +33,8 @@ const MobileNavMenu = ({isOpen, setIsOpen}: PropTypes) => {
         <ul className="nav-menu__list">
             {
                 navMenu.map(navItem => (
-                    <li className="nav-menu__item">
-                        <Link to={navItem.path} onClick={() => setIsOpen(!isOpen)}>
+                    <li className="nav-menu__item" onClick={() => setIsOpen(!isOpen)}>
+                        <Link to={navItem.path}>
                             {navItem.label}
                         </Link>
                     </li>
