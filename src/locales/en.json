@@ -129,5 +129,15 @@
         "We are here for commerce and corporate law services.",
         "We carefully manage inheritance and wills."
         ]
+    },
+
+    "links": {
+        "constitutional_court": "Constitutional Court",
+        "tbmm": "Grand National Assembly of Turkey",
+        "turkey_bar_association": "The Union of Turkish Bar Associations",
+        "council_of_state": "Council of State",
+        "supreme_court_of_appeals": "Supreme Court of Appeals",
+        "interpol": "Interpol",
+        "echr": "European Court of Human Rights"
     }
 }

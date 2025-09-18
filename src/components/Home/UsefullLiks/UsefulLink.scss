@@ -1,62 +1,79 @@
 .useful-links {
-    margin: 5rem auto;
-    > ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
+    margin: 3rem auto;
+    max-width: 1000px;
+  .swiper {
+    padding-bottom: 3rem; 
+  }
+  // Swiper'ın her bir slaytı.
+  .swiper-slide {
+    text-align: center;
+    
+    // Her bir slayt içindeki bağlantı etiketi.
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: var(--color-blue);
+      font-weight: bold; 
 
-        li {
-            a {
-                img {
-                    height: 6rem; width: auto;
-                    object-fit: cover;
-                    filter: drop-shadow(0 16px 6px rgba(0, 0, 0, 0.6));
-                    transition: all .4s;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }
-            }
+      img {
+        height: 6rem;
+        width: auto;
+        object-fit: cover;
+        filter: drop-shadow(0 16px 6px rgba(0, 0, 0, 0.6));
+        transition: all 0.4s;
+
+        &:hover {
+          transform: scale(1.1);
         }
-    }
+      }
 
+      span {
+        margin-top: 1rem; // Resmin altına metin için boşluk ekler.
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--color-blue);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+      }
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--color-blue);
+    top: 50%;
+    transform: translateY(-50%);
+    svg {
+        width: 2rem; height: 2rem;
+    }
+    
     @media (max-width: 768px) {
-        margin: 3rem 1.5rem;
-        overflow-x: scroll;
-        overflow-y: hidden;
-
-
-
-        /* Scrollbar genişliği */
-        -webkit-scrollbar {
-        width: 20px;
-        }
-
-        /* Scrollbar kanalı (arkaplanı) */
-        -webkit-scrollbar-track {
-        background: #b81717;
-        border-radius: 10px;
-        }
-
-        /* Scrollbar kaydırma çubuğu */
-        -webkit-scrollbar-thumb {
-        background: #750b0b;
-        border-radius: 10px;
-        }
-
-        /* Hover efekti */
-        -webkit-scrollbar-thumb:hover {
-        background: #a80101;
-        }
-        > ul {
-            li {
-                a {
-                    img {
-                        height: 3rem;
-                    }
-                }
-            }
-        }
+        display: none;
     }
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #ccc;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: var(--color-blue);
+  }
+
+  @media (max-width: 768px) {
+    margin: 3rem 1rem; 
+    .swiper {
+        overflow: hidden;
+    }
+    .swiper-slide {
+      a img {
+        height: 4rem;
+      }
+    }
+  }
 }

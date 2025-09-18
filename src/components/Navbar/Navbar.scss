@@ -37,7 +37,7 @@ nav {
                 img {
                     width: 6rem; height: auto;
                     object-fit: cover;
-                    filter: brightness(0) invert(1);
+                    filter: brightness(0) saturate(100%) invert(71%) sepia(24%) saturate(354%) hue-rotate(358deg) brightness(101%) contrast(86%);
                 }
 
                 &::after {
@@ -63,6 +63,9 @@ nav {
                 .nav-menu__item {
                     position: relative;
 
+                    &.active {
+                        color: var(--color-yellow);
+                    }
                     &::after {
                         position: absolute;
                         top: 0; left: 0;

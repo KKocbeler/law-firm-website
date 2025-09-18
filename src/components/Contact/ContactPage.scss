@@ -40,3 +40,33 @@
         }
     }
 }
+
+.contact-main {
+    margin: 4rem auto;
+    min-height: 45vh;
+
+    > p {
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    .contact-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 3rem;
+
+        & > div {
+            padding: 2rem;
+            border-radius: .5rem;
+            background-color: var(--color-white);
+            text-align: center;
+            box-shadow: var(--shadow-2);
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+

@@ -84,13 +84,13 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 899px) {
         grid-template-columns: 1fr;
-        margin: 3rem 1.5rem;
+        margin: 4rem 2rem;
         gap: 2rem;
         .image-section {
             img {
-                height: auto;
+                max-height: 45rem;
             }
 
             .badge {
@@ -101,9 +101,13 @@
             }
         }
         .content-section {
-            svg {
+            > svg {
                 display: none;
             }
         }
+    }
+
+    @media (max-width: 600px) {
+        margin: 3rem 1rem;
     }
 }

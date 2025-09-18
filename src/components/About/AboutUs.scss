@@ -4,10 +4,12 @@
     h2 {
         text-align: center;
         margin-bottom: 2rem;
+        font-size: 1.8rem;
     }
     p {
         text-align: center;
-        line-height: 1.7rem
+        line-height: 1.7rem;
+        white-space: pre-line;
     }
 
     @media (max-width: 899px) {

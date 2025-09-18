@@ -41,7 +41,7 @@ const Navbar = () => {
                 <div className={`nav-menu ${isOpen ? "show" : ""}`}>
                     <ul className="nav-menu__list">
                         {navMenu.map((navItem, index) => (
-                            <li className="nav-menu__item" key={index}>
+                            <li className={`nav-menu__item ${location.pathname === navItem.path ? "active" : ""}`} key={index} >
                                 <Link to={navItem.path}>{navItem.label}</Link>
                             </li>
                         ))}

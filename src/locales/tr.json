@@ -127,5 +127,15 @@
         "Ticaret ve şirket hukuku hizmetlerinde yanınızdayız.",
         "Miras ve vasiyet işlemlerini dikkatle yönetiyoruz."
         ]
+    },
+
+    "links": {
+        "constitutional_court": "Anayasa Mahkemesi",
+        "tbmm": "TBMM",
+        "turkey_bar_association": "Türkiye Barolar Birliği",
+        "council_of_state": "Danıştay",
+        "supreme_court_of_appeals": "Yargıtay",
+        "interpol": "Interpol",
+        "echr": "Avrupa İnsan Hakları Mahkemesi"
     }
 }
