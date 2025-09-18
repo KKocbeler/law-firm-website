@@ -1,42 +1,35 @@
 import { FaUserTie } from "react-icons/fa6";
-import "./Members.scss";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { useTranslation } from "react-i18next";
+import "./Members.scss";
 
 const Members = () => {
+  const { t } = useTranslation();
+  const members = t("members", { returnObjects: true }) as {
+    name: string;
+    position: string;
+    phone: string;
+    email: string;
+  }[];
+
   return (
     <div className="members container">
         <article className="member-list">
-            <section className="member-list__item">
-                <div className="member-list__img">
-                    <FaUserTie />
-                </div>
-                <h3 className="member-list__name">Av. Murat Ayerden</h3>
-                <p className="member-list__statu">Avukat</p>
-                <p className="member-list__tel"><FaPhoneAlt /> (505) 555 55 55</p>
-                <p className="member-list__mail"><IoMdMail /> example@example.com</p>  
-            </section>
-            <section className="member-list__item">
-                <div className="member-list__img">
-                    <FaUserTie />
-                </div>
-                <h3 className="member-list__name">Av. Özkan Özer</h3>
-                <p className="member-list__statu">Avukat</p>
-                <p className="member-list__tel"><FaPhoneAlt /> (505) 555 55 55</p>
-                <p className="member-list__mail"><IoMdMail /> example@example.com</p>
-            </section>
-            <section className="member-list__item">
-                <div className="member-list__img">
-                    <FaUserTie />
-                </div>
-                <h3 className="member-list__name">Krd. Tayfun Demirhan</h3>
-                <p className="member-list__statu">Koordinatör</p>
-                <p className="member-list__tel"><FaPhoneAlt /> (505) 555 55 55</p>
-                <p className="member-list__mail"><IoMdMail /> example@example.com</p>
-            </section>
+            {members.map((member, index) => (
+              <section className="member-list__item" key={index}>
+                  <div className="member-list__img">
+                      <FaUserTie />
+                  </div>
+                  <h3 className="member-list__name">{member.name}</h3>
+                  <p className="member-list__statu">{member.position}</p>
+                  <p className="member-list__tel"><FaPhoneAlt /> {member.phone}</p>
+                  <p className="member-list__mail"><IoMdMail /> {member.email}</p>  
+              </section>
+            ))}
         </article>
     </div>
-  )
-}
+  );
+};
 
-export default Members
+export default Members;

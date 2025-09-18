@@ -1,0 +1,47 @@
+.language {
+    .current-language {
+        position: relative;
+        padding: 1rem 0;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .7rem;
+            padding: .3rem .7rem;
+            background-color: var(--color-blue);
+            color: var(--color-white);
+            border-radius: 2rem;
+            width:  4.2rem;
+            font-size: .875rem;
+            svg {
+                width: .75rem; height: .75rem;
+            }
+        }
+
+        .dropdown-menu {
+            padding: .3rem .7rem;
+            background-color: var(--color-blue);
+            position: absolute;
+            bottom: -3.3rem; left: 0; right: 0;
+            border-radius: 1rem;
+            text-align: center;
+            color: var(--color-white);
+            transition: all .3s;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-1rem);
+            &.open {
+                visibility: visible;
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            li {
+                padding: .25rem 0;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}

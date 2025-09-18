@@ -25,6 +25,7 @@ nav {
         opacity: .7;
         z-index: -1;
     }
+
     .nav-left {
         display: flex;
         align-items: center;
@@ -79,29 +80,6 @@ nav {
         align-items: center;
         gap: 3rem;
 
-        .phone {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-                color: var(--color-white);
-                .phone-icon {
-                    padding: .825rem;
-                    border-radius: 50%;
-                    background-color: var(--color-yellow);
-
-                    svg {
-                        width: .75rem; height: .75rem;
-                    }
-                }
-        }
-
-        .nav-language {
-            padding: .35rem 1.25rem;
-            border: 1px solid hsl(0, 0%, 55%);
-            border-radius: 1rem;
-            font-size: .875rem;
-        }
-
         .nav-hamburger {
             display: none;
         }
@@ -135,7 +113,7 @@ nav {
             .phone {
                 display: none;
             }
-            .nav-language {
+            .language {
                 display: none;
             }
 

@@ -17,10 +17,33 @@
             }
         }
     }
+
+    .nav-menu__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--color-blue);
+
+        .phone {
+            color: var(--color-blue);
+
+            .phone-icon {
+                background-color: var(--color-blue);
+
+                svg {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
     .nav-menu__list {
         .nav-menu__item {
+            text-align: center;
             color: var(--color-blue);
             padding: 1rem;
+            cursor: pointer;
+            font-size: 1.05rem;
         }
     }
 

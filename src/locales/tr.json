@@ -1,0 +1,131 @@
+{
+    "about-hero": {
+        "title": "HAKKIMIZDA"
+    },
+
+    "about": {
+        "title": "AYERDEN DEMİRHAN HUKUK BÜROSU",
+        "text": "Ayerden Demirhan Hukuk Bürosu, bireylere ve işletmelere kapsamlı hukuki danışmanlık ve temsil hizmetleri sunmak amacıyla kurulmuştur. \n\n Müvekkillerimizin haklarını en etkin şekilde korumayı ve onların ihtiyaçlarına uygun, hızlı ve sonuç odaklı çözümler üretmeyi temel ilke edindik.\n\nAlanında deneyimli avukatlarımız; aile hukuku, miras hukuku, iş hukuku, ticaret hukuku, ceza hukuku ve daha birçok alanda profesyonel destek sağlamaktadır. Her dosyaya aynı titizlikle yaklaşarak şeffaf iletişim, güvenilirlik ve gizlilik ilkelerini ön planda tutuyoruz.\n\nMüvekkillerimizin sadece bugünkü sorunlarını değil, gelecekte karşılaşabilecekleri riskleri de öngörerek uzun vadeli çözümler sunmayı hedefliyoruz. Hukukun herkes için erişilebilir, adil ve güven verici olması gerektiğine inanıyor; bu doğrultuda çalışmalarımızı sürdürüyoruz."
+    },
+
+    "footer": {
+        "slogan": "Hukuki Çözümlere Giden Köprünüz.",
+        "motto": "Güven, Tecrübe, Sonuç",
+        "servicesTitle": "Hizmet Alanlarımız",
+        "services": [
+            "Danışmanlık Hizmetleri",
+            "Dava ve Uyuşmazlık Çözümleri",
+            "Sözleşme ve Ticari İşlemler",
+            "Aile ve Miras Hukuku"
+        ],
+        "contactTitle": "İletişim",
+        "privacy": "Kullanım ve Gizlilik",
+        "copyright": "@ 2025 Ayerden Demirhan Hukuk Bürosu - Tüm hakları saklıdır"
+    },
+
+    "notFound": {
+        "title": "Aradığınız Sayfa Bulunamadı",
+        "text": "Üzgünüz, aradığınız sayfa mevcut değil ya da taşınmış olabilir.",
+        "link": "Anasayfaya Dön"
+    },
+
+    "welcome": {
+        "title": "AYERDEN DEMİRHAN\nHUKUK BÜROSU"
+    },
+
+    "team-hero": {
+        "title": "EKİBİMİZ"
+    },
+
+    "members": [
+        {
+        "name": "Av. Murat Ayerden",
+        "position": "Avukat",
+        "phone": "(505) 555 55 55",
+        "email": "example@example.com"
+        },
+        {
+        "name": "Av. Özkan Özer",
+        "position": "Avukat",
+        "phone": "(505) 555 55 55",
+        "email": "example@example.com"
+        },
+        {
+        "name": "Krd. Tayfun Demirhan",
+        "position": "Koordinatör",
+        "phone": "(505) 555 55 55",
+        "email": "example@example.com"
+        }
+    ],
+
+    "privacy": {
+        "title": "Kullanım Şartları ve Gizlilik Politikası",
+        "sections": [
+        {
+            "title": "Genel Bilgiler",
+            "content": "Bu siteyi kullanarak, site kurallarına ve kullanım şartlarına uymayı kabul etmiş olursunuz. Sitedeki bilgiler yalnızca bilgilendirme amaçlıdır ve hukuki danışmanlık yerine geçmez. Siteyi kullanarak, buradaki bilgileri kendi sorumluluğunuz altında değerlendirmeyi kabul etmiş olursunuz."
+        },
+        {
+            "title": "Kullanıcı Sorumlulukları",
+            "content": "Kullanıcılar siteyi yasalara uygun bir şekilde kullanmakla yükümlüdür. Siteyi zarar verici, yasadışı, saldırgan veya yanıltıcı amaçlarla kullanamazsınız. Diğer kullanıcıların deneyimini olumsuz etkileyecek herhangi bir eylemde bulunmak yasaktır. Siteye giriş sırasında verdiğiniz bilgilerin doğruluğundan kullanıcı sorumludur."
+        },
+        {
+            "title": "İçerik ve Telif Hakları",
+            "content": "Sitedeki tüm metin, görsel, logo, video ve diğer içerikler telif hakkıyla korunmaktadır. İzinsiz kopyalanması, çoğaltılması, dağıtılması veya üçüncü taraflarla paylaşılması yasaktır. İçerikler yalnızca bilgilendirme ve kişisel kullanım amaçlı sunulmaktadır."
+        },
+        {
+            "title": "Sorumluluk Reddi",
+            "content": "Site, içeriklerin doğruluğu, güncelliği ve eksiksizliği konusunda garanti vermez. Sunulan bilgiler yalnızca genel bilgilendirme niteliğindedir ve kullanıcıların kendi araştırmalarını yapmaları gerekmektedir. Hukuki konularda doğru ve güvenilir bilgi için lütfen doğrudan uzman bir avukata danışınız."
+        },
+        {
+            "title": "Değişiklikler",
+            "content": "Sitemiz, kullanım şartlarını herhangi bir zamanda değiştirme hakkını saklı tutar. Güncel kullanım şartları bu sayfada yayımlanacaktır ve siteyi kullanmaya devam eden kullanıcılar, değişiklikleri kabul etmiş sayılır."
+        },
+        {
+            "title": "Gizlilik ve Veri Koruma",
+            "content": "Siteyi kullanırken sağladığınız bilgiler, Gizlilik Politikası kapsamında korunur. Kişisel bilgileriniz üçüncü kişilerle paylaşılmaz ve yalnızca hizmetlerin iyileştirilmesi amacıyla kullanılır. Kullanıcı, kendi bilgilerini doğru ve güncel tutmakla yükümlüdür."
+        },
+        {
+            "title": "Bağlantılar",
+            "content": "Sitede yer alan üçüncü taraf bağlantılar yalnızca referans amaçlıdır. Bağlantılı sitelerin içeriklerinden sitemiz sorumlu değildir ve kullanıcılar bu siteleri kendi sorumlulukları altında ziyaret eder."
+        }
+        ]
+    },
+
+    "nav": {
+        "home": "Anasayfa",
+        "team": "Ekibimiz",
+        "about": "Hakkımızda",
+        "contact": "İletişim"
+    },
+
+    "caseTypes": {
+        "title": "Hizmet Alanlarımız",
+        "areas": {
+        "family": "Aile Hukuku",
+        "commerce": "Ticaret ve Şirket Hukuku",
+        "criminal": "Ceza Hukuku",
+        "work": "İş ve Sosyal Güvenlik Hukuku",
+        "bankruptcy": "İcra ve İflas Hukuku",
+        "realEstate": "Gayrimenkul ve İnşaat Hukuku",
+        "tax": "Vergi Hukuku",
+        "ip": "Fikri Mülkiyet Hukuku"
+        }
+    },
+
+    "hero": {
+        "title": "AYERDEN DEMİRHAN HUKUK BÜROSU"
+    },
+
+    "section-one": {
+        "title": "Her Türlü <b>hukuksuzluğa</b> karşı yanınızdayız.",
+        "paragraph": "Hukuk alanındaki her konuda güçlü ve güvenilir destek sağlıyoruz.",
+        "features": [
+        "Hukuki konularda güvenilir danışmanlık sağlıyoruz.",
+        "Sözleşme ve dava takibini hızlı ve doğru şekilde yapıyoruz.",
+        "Aile hukuku ve miras konularında destek veriyoruz.",
+        "Ticaret ve şirket hukuku hizmetlerinde yanınızdayız.",
+        "Miras ve vasiyet işlemlerini dikkatle yönetiyoruz."
+        ]
+    }
+}

@@ -5,26 +5,32 @@ import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import MobileNavMenu from "./MobileNavMenu";
-
-const navMenu = [
-    {label: "Anasayfa", path: "/"},
-    {label: "Ekibimiz", path: "/our-team"},
-    {label: "Hakkımızda", path: "/about-us"},
-    {label: "İletişim", path: "/contact"},
-]
+import Phone from "../../utilty/Phone";
+import Language from "../../utilty/Language";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
-    const [isActive, setIsActive] = useState(false)
+    const { t } = useTranslation();
+    const [isActive, setIsActive] = useState(false);
     const location = useLocation();
     const [isOpen, setIsOpen] = useState(false);
+
+    const navMenu = [
+        {label: t("nav.home"), path: "/"},
+        {label: t("nav.team"), path: "/our-team"},
+        {label: t("nav.about"), path: "/about-us"},
+        {label: t("nav.contact"), path: "/contact"},
+    ];
+
     useEffect(() => {
-    if (location.pathname === "/terms-and-privacy") {
-        setIsActive(true);
-    } else {
-        setIsActive(false);
-    }
+        const activePaths = ["/terms-and-privacy"];
+        if (activePaths.includes(location.pathname) || !["/", "/our-team", "/about-us", "/contact"].includes(location.pathname)) {
+            setIsActive(true);
+        } else {
+            setIsActive(false);
+        }
     }, [location]);
-        console.log(isOpen)
+
     return (
         <nav className= {isActive ? "active" : ""}>
             <div className="nav-left">
@@ -35,35 +41,26 @@ const Navbar = () => {
                 </div>
                 <div className={`nav-menu ${isOpen ? "show" : ""}`}>
                     <ul className="nav-menu__list">
-                        {
-                            navMenu.map(navItem => (
-                                <li className="nav-menu__item">
-                                    <Link to={navItem.path}>
-                                        {navItem.label}
-                                    </Link>
-                                </li>
-                            ))
-                        }
+                        {navMenu.map((navItem, index) => (
+                            <li className="nav-menu__item" key={index}>
+                                <Link to={navItem.path}>{navItem.label}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <MobileNavMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
             </div>
             <div className="nav-right">
-                <div className="phone">
-                    <div className="phone-icon">
-                        <BsFillTelephoneOutboundFill /> 
-                    </div>
-                    <span>+90 555 555 55 55</span>
-                </div>
-                <div className="nav-language">
-                    <div className="tr">TR</div>
-                </div>
+                <Phone />
+                <Language />
                 <div className="nav-hamburger">
-                    <button type="button" aria-label="Menu" onClick={() => setIsOpen(!isOpen)}><RxHamburgerMenu /></button>
+                    <button type="button" aria-label="Menu" onClick={() => setIsOpen(!isOpen)}>
+                        <RxHamburgerMenu />
+                    </button>
                 </div>
             </div>
         </nav>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

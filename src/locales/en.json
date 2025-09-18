@@ -1,0 +1,133 @@
+{
+    "about-hero": {
+        "title": "ABOUT US"
+    },
+
+    "about": {
+        "title": "AYERDEN DEMIRHAN LAW OFFICE",
+        "text": "Ayerden Demirhan Law Office was established to provide comprehensive legal consultancy and representation services to individuals and businesses. Our core principle is to protect our clients’ rights in the most effective way and to produce fast, result-oriented solutions tailored to their needs.\n\nOur experienced lawyers provide professional support in family law, inheritance law, labor law, commercial law, criminal law, and many other areas. We approach each case with the same diligence, prioritizing transparent communication, reliability, and confidentiality.\n\nWe aim to offer long-term solutions by anticipating not only our clients’ current problems but also potential future risks. We believe that law should be accessible, fair, and trustworthy for everyone, and we continue our work accordingly."
+    },
+
+    "footer": {
+        "slogan": "Your Bridge to Legal Solutions.",
+        "motto": "Trust, Experience, Results",
+        "servicesTitle": "Our Services",
+        "services": [
+            "Consultancy Services",
+            "Litigation and Dispute Resolution",
+            "Contracts and Commercial Transactions",
+            "Family and Inheritance Law"
+        ],
+        "contactTitle": "Contact",
+        "privacy": "Terms and Privacy",
+        "copyright": "@ 2025 Ayerden Demirhan Law Office - All rights reserved"
+    },
+
+    "notFound": {
+        "title": "Page Not Found",
+        "text": "Sorry, the page you are looking for does not exist or may have been moved.",
+        "link": "Return to Homepage"
+    },
+
+    "welcome": {
+        "title": "AYERDEN DEMIRHAN\nLAW FIRM"
+    },
+
+    "team-hero": {
+        "title": "OUR TEAM"
+    },
+
+    "members": [
+        {
+        "name": "Lawyer Murat Ayerden",
+        "position": "Lawyer",
+        "phone": "(505) 555 55 55",
+        "email": "example@example.com"
+        },
+        {
+        "name": "Lawyer Özkan Özer",
+        "position": "Lawyer",
+        "phone": "(505) 555 55 55",
+        "email": "example@example.com"
+        },
+        {
+        "name": "Coord. Tayfun Demirhan",
+        "position": "Coordinator",
+        "phone": "(505) 555 55 55",
+        "email": "example@example.com"
+        }
+    ],
+
+    "privacy": {
+        "title": "Terms of Use and Privacy Policy",
+        "sections": [
+        {
+            "title": "General Information",
+            "content": "By using this site, you agree to comply with the site rules and terms of use. The information on the site is for informational purposes only and does not constitute legal advice. By using the site, you accept to evaluate the information at your own responsibility."
+        },
+        {
+            "title": "User Responsibilities",
+            "content": "Users are obliged to use the site in accordance with the law. You may not use the site for harmful, illegal, offensive, or misleading purposes. Any action negatively affecting the experience of other users is prohibited. Users are responsible for the accuracy of the information provided when accessing the site."
+        },
+        {
+            "title": "Content and Copyrights",
+            "content": "All texts, visuals, logos, videos, and other content on the site are protected by copyright. Unauthorized copying, reproduction, distribution, or sharing with third parties is prohibited. Contents are provided for informational and personal use only."
+        },
+        {
+            "title": "Disclaimer of Liability",
+            "content": "The site does not guarantee the accuracy, timeliness, or completeness of the contents. The provided information is for general informational purposes only, and users must conduct their own research. For accurate and reliable legal information, please consult a qualified lawyer."
+        },
+        {
+            "title": "Changes",
+            "content": "We reserve the right to modify the terms of use at any time. Updated terms of use will be published on this page, and users who continue to use the site are considered to have accepted the changes."
+        },
+        {
+            "title": "Privacy and Data Protection",
+            "content": "The information you provide while using the site is protected under the Privacy Policy. Your personal information is not shared with third parties and is used only to improve services. Users are responsible for keeping their information accurate and up-to-date."
+        },
+        {
+            "title": "Links",
+            "content": "Third-party links on the site are provided for reference only. We are not responsible for the content of linked sites, and users visit these sites at their own risk."
+        }
+        ]
+    },
+
+    "nav": {
+        "home": "Home",
+        "team": "Our Team",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+
+    "caseTypes": {
+        "title": "Our Practice Areas",
+        "areas": {
+        "family": "Family Law",
+        "commerce": "Commercial & Corporate Law",
+        "criminal": "Criminal Law",
+        "work": "Labor & Social Security Law",
+        "bankruptcy": "Bankruptcy & Enforcement Law",
+        "realEstate": "Real Estate & Construction Law",
+        "tax": "Tax Law",
+        "ip": "Intellectual Property Law"
+        }
+    },
+
+    "hero": {
+        "title": "AYERDEN DEMIRHAN LAW FIRM"
+    },
+
+    "section-one": {
+        "experienceYears": "18",
+        "experienceText": "Years of Experience",
+        "title": "We stand by you against all <b>injustices</b>.",
+        "paragraph": "We provide strong and reliable support in every legal matter. We are here to protect your rights and offer fair solutions.",
+        "features": [
+        "We provide reliable legal consultancy.",
+        "We handle contracts and cases quickly and accurately.",
+        "We support in family law and inheritance matters.",
+        "We are here for commerce and corporate law services.",
+        "We carefully manage inheritance and wills."
+        ]
+    }
+}

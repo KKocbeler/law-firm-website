@@ -49,10 +49,15 @@
         }
     }
 
-    @media (max-width: 768px) {
-        margin: 3rem 1rem;
+    @media (max-width: 899px) {
+        margin: 4rem 2rem;
+
         .member-list {
             grid-template-columns: 1fr;
         }
+    }
+
+    @media (max-width: 600px) {
+        margin: 3rem 1rem;
     }
 }

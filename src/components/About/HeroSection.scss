@@ -29,13 +29,21 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 899px) {
         height: 25vh;
-
         .about__hero-content {
             h1 {
-                margin-bottom: 2.5rem;
-                font-size: 2rem;
+                margin-bottom: 5rem;
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .about__hero-content {
+            h1 {
+                margin-bottom: 3.5rem;
+                font-size: 1.8rem;
             }
         }
     }

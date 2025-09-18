@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./Footer.scss";
 
 const flags = [
@@ -13,89 +14,72 @@ const flags = [
     {country: "Rusya", path:"/images/countries/flag_of_russia.svg.webp"},
 ];
 
-
-const services = [
-  "Danışmanlık Hizmetleri",
-  "Dava ve Uyuşmazlık Çözümleri",
-  "Sözleşme ve Ticari İşlemler",
-  "Aile ve Miras Hukuku",
-];
-
 const mail = "ayderhukuk@gmail.com";
 const phone = "(0532) 179 71 55";
-const Footer = () => {
-  return (
-    <footer>
-        <div className="footer-container container">
-            <div className="f-left">
-                <div className="brand-logo">
-                    <img src="/images/brand-logo.png" alt="Şirket logosu" />
-                </div>
-                <p>Hukuki Çözümlere Giden Köprünüz.</p>
-                <p>Güven, Tecrübe, Sonuç</p>
-                {/* <div className="footer-media">
-                    <ul className="footer-media__list">
-                        {
-                            socialLinks.map(social => (
-                                <li className="footer-media__item" key={social.label}>
-                                    <a href={social.path} title={social.label}>{social.icon}</a>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div> */}
-            </div>
-            <div className="f-services">
-                <h3>Hizmet Alanlarımız</h3>
-                <ul className="services-list">
-                    {services.map((service, index) => (
-                    <li key={index} className="services-list__item">
-                        {service}
-                    </li>
-                    ))}
-                </ul>
-            </div>
-            <div className="f-contacts">
-                <h3>İletişim</h3>
-                <p>
-                    <a
-                        href="https://mail.google.com/mail/?view=cm&fs=1&to=ayderhukuk@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="E-posta gönder: ayderhukuk@gmail.com"
-                    >
-                        {mail}
-                    </a>
-                </p>
 
-                <p>
-                    <a
-                        href="tel:+905321797155"
-                        aria-label="Ara: 0532 179 71 55"
-                    >
-                        {phone}
-                    </a>
-                </p>
+const Footer = () => {
+    const { t } = useTranslation();
+    const services = t("footer.services", { returnObjects: true }) as string[];
+
+    return (
+        <footer>
+            <div className="footer-container container">
+                <div className="f-left">
+                    <div className="brand-logo">
+                        <img src="/images/brand-logo.png" alt="Şirket logosu" />
+                    </div>
+                    <p>{t("footer.slogan")}</p>
+                    <p>{t("footer.motto")}</p>
+                </div>
+                <div className="f-services">
+                    <h3>{t("footer.servicesTitle")}</h3>
+                    <ul className="services-list">
+                        {services.map((service: string, index: number) => (
+                            <li key={index} className="services-list__item">
+                                {service}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="f-contacts">
+                    <h3>{t("footer.contactTitle")}</h3>
+                    <p>
+                        <a
+                            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${mail}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`E-posta gönder: ${mail}`}
+                        >
+                            {mail}
+                        </a>
+                    </p>
+
+                    <p>
+                        <a
+                            href="tel:+905321797155"
+                            aria-label={`Ara: ${phone}`}
+                        >
+                            {phone}
+                        </a>
+                    </p>
+                </div>
+                <div className="f-ataturk">
+                    <img src="/images/ataturk.png" alt="Atatürk" />
+                </div>
+                <div className='f-flags'>
+                    {flags.map(flag => (
+                        <img key={flag.country} src={flag.path} alt={`${flag.country} bayrağı`} title={flag.country}/>
+                    ))}
+                </div>
             </div>
-            <div className="f-ataturk">
-                <img src="/images/ataturk.png" alt="Atatürk" />
+            <div className="footer-bottom container">
+                <p>{t("footer.copyright")}</p>
+                <div className="privacy-terms">
+                    <Link to={"/terms-and-privacy"}>{t("footer.privacy")}</Link>
+                </div>
             </div>
-            <div className='f-flags'>
-                {
-                    flags.map(flag => (
-                        <img src={flag.path} alt={`${flag.country} bayrağı`} title={flag.country}/>
-                    ))
-                }
-            </div>
-        </div>
-        <div className="footer-bottom container">
-            <p>@ 2025 Ayerden Demirhan Hukuk Bürosu - Tüm hakları saklıdır </p>
-            <div className="privacy-terms">
-                <Link to={"/terms-and-privacy"}>Kullanım ve Gizlilik</Link>
-            </div>
-        </div>
-    </footer>
-  )
+        </footer>
+    )
 }
 
-export default Footer
+export default Footer;
