@@ -137,5 +137,16 @@
         "supreme_court_of_appeals": "Yargıtay",
         "interpol": "Interpol",
         "echr": "Avrupa İnsan Hakları Mahkemesi"
+    },
+
+    "contact": {
+        "heroTitle": "İLETİŞİM",
+        "heading": "Bize Ulaşın",
+        "paragraph1": "Hukuki sorularınız, danışmanlık talepleriniz veya randevu almak için bize her zaman ulaşabilirsiniz. Profesyonel ekibimiz, en kısa sürede taleplerinize geri dönüş yapacaktır.",
+        "paragraph2": "Müvekkil gizliliğine ve güvenine büyük önem veriyoruz. Hukuki danışmanlık almak veya sorularınızı iletmek için bizimle iletişime geçmekten çekinmeyin.",
+        "emailTitle": "E-posta Gönderin",
+        "phoneTitle": "Bizi Arayın",
+        "addressTitle": "Adresimiz",
+        "address": "Örnek Mahallesi Örnek Sokak No: 123, Merkez, Uşak"
     }
 }

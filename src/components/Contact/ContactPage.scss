@@ -41,32 +41,52 @@
     }
 }
 
-.contact-main {
-    margin: 4rem auto;
-    min-height: 45vh;
+/* Ana Bölüm */
+.contact-section {
+    margin: 3rem auto;
+    text-align: center;
+    min-height: 40vh;
+    .contact-container {
+        margin: 0 1rem;
+        .contact-info-wrapper {
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            .contact-details {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+                margin-top: 3rem;
 
-    > p {
-        text-align: center;
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-    }
-    .contact-info {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 3rem;
+                .contact-item {
+                    text-align: center;
+                    justify-items: center;
+                    align-content: center;
+                    padding: 1rem 2rem;
+                    border-radius: .5rem;
+                    border: 1px solid var(--color-blue);
 
-        & > div {
-            padding: 2rem;
-            border-radius: .5rem;
-            background-color: var(--color-white);
-            text-align: center;
-            box-shadow: var(--shadow-2);
+                    svg {
+                        width: 2rem; height: 2rem;
+                    }
+
+                    .contact-item-title {
+                        margin: 1rem 0;
+                        font-weight: bold;
+                    }
+                }
+            }
         }
+    }
 
-        p {
-            font-size: 1.5rem;
+    @media (max-width: 899px) {
+        .contact-container {
+            .contact-info-wrapper {
+                .contact-details {
+                    grid-template-columns: 1fr;
+                }
+            }
         }
     }
 }
-

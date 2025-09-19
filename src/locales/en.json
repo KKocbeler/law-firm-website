@@ -139,5 +139,16 @@
         "supreme_court_of_appeals": "Supreme Court of Appeals",
         "interpol": "Interpol",
         "echr": "European Court of Human Rights"
+    },
+
+    "contact": {
+        "heroTitle": "CONTACT",
+        "heading": "Get in Touch",
+        "paragraph1": "You can always reach out to us for your legal questions, consultancy requests, or to schedule an appointment. Our professional team will get back to you as soon as possible.",
+        "paragraph2": "We place great importance on client confidentiality and trust. Do not hesitate to contact us for legal advice or to ask your questions.",
+        "emailTitle": "Send an Email",
+        "phoneTitle": "Call Us",
+        "addressTitle": "Our Address",
+        "address": "Örnek Mahallesi Örnek Sokak No: 123, Merkez, Uşak"
     }
 }
