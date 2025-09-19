@@ -64,11 +64,11 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="f-ataturk">
-                    <img src="/images/ataturk.png" alt="Atatürk" />
+                    <img src="/images/ataturk.png" alt="Atatürk" loading="lazy"/>
                 </div>
                 <div className='f-flags'>
                     {flags.map(flag => (
-                        <img key={flag.country} src={flag.path} alt={`${flag.country} bayrağı`} title={flag.country}/>
+                        <img key={flag.country} src={flag.path} alt={`${flag.country} bayrağı`} title={flag.country} loading="lazy"/>
                     ))}
                 </div>
             </div>

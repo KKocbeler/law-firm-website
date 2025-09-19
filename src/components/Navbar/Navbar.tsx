@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className="nav-left">
                 <div className="nav-logo">
                     <Link to={"/"}>
-                        <img src="/images/brand-logo.png" alt="" />
+                        <img src="/images/brand-logo.png" alt="Ayerden Demirhan Hukuk Bürosu" loading="lazy"/>
                     </Link>
                 </div>
                 <div className={`nav-menu ${isOpen ? "show" : ""}`}>

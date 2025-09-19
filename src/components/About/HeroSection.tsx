@@ -5,9 +5,9 @@ const HeroSection = () => {
     const { t } = useTranslation();
   return (
     <div className="about__hero-section">
-        <div className="about__hero-content">
+        <section className="about__hero-content">
             <h1>{t("about-hero.title")}</h1>
-        </div>
+        </section>
     </div>
   )
 }

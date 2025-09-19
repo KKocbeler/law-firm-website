@@ -16,12 +16,12 @@ const Welcome = () => {
 
     return (
         <div className={`welcome ${hideWelcome ? "hide" : ""}`}>
-            <div className="welcome-content">
+            <section className="welcome-content">
                 <img src="/images/brand-logo.png" alt="Şirket logosu" />
                 <h1 style={{ whiteSpace: "pre-line" }}>
                     {t("welcome.title")}
                 </h1>
-            </div>
+            </section>
         </div>
     )
 }

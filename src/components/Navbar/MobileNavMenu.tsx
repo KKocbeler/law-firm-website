@@ -33,7 +33,7 @@ const MobileNavMenu = ({isOpen, setIsOpen}: PropTypes) => {
   return (
     <div className={`mobile-nav-menu ${isOpen ? "show" : ""}`}>
         <header>
-            <img src="/images/brand-logo.png" alt="Şirket Logosu" />
+            <img src="/images/brand-logo.png" alt="Ayerden Demirhan Hukuk Bürosu" loading='lazy'/>
             <button type='button' aria-label='Menü kapat' onClick={() => setIsOpen(false)}>
                 <IoCloseOutline />
             </button>

@@ -21,7 +21,7 @@ const CaseTypes = () => {
         <article className='practice-areas'>
             {practiceAreas.map((item, index) => (
                 <section className='area-section' key={index}>
-                    <img src={item.image} alt={t(`caseTypes.areas.${item.key}`)} />
+                    <img src={item.image} alt={t(`caseTypes.areas.${item.key}`)} loading='lazy'/>
                     <h3>{t(`caseTypes.areas.${item.key}`)}</h3>
                 </section>
             ))}

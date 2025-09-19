@@ -6,9 +6,9 @@ const HeroSection = () => {
 
   return (
     <div className="members__hero-section">
-        <div className="members__hero-content">
+        <section className="members__hero-content">
             <h1>{t("team-hero.title")}</h1>
-        </div>
+        </section>
     </div>
   )
 }

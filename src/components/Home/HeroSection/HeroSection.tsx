@@ -6,10 +6,10 @@ const HeroSection = () => {
 
   return (
     <div className='hero'>
-        <div className="hero-content container">
+        <section className="hero-content container">
             <img src="/images/brand-logo.png" alt="Şirket logosu" />
             <h1>{t("hero.title")}</h1>
-        </div>
+        </section>
     </div>
   )
 }

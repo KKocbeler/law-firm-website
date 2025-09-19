@@ -42,7 +42,7 @@ const UsefulLink = () => {
           links.map(link => (
             <SwiperSlide key={link.labelKey}>
               <a href={link.url} target="_blank" rel="noopener noreferrer">
-                <img src={link.path} alt={t(link.labelKey)} title={t(link.labelKey)} />
+                <img src={link.path} alt={t(link.labelKey)} title={t(link.labelKey)} loading='lazy'/>
                 <span>{t(link.labelKey)}</span>
               </a>
             </SwiperSlide>
